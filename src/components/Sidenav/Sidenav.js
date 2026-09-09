@@ -80,34 +80,6 @@ export default function Sidenav(props) {
               <Content routes={routes} />
             </Box>
           </Stack>
-          <Flex
-            align="center"
-            direction="row"
-            fontSize="20px"
-            gap="20px"
-            justifyContent="center"
-            alignItems="center"
-          >
-            <GitHubButton
-              href="https://github.com/Rahul1582/portfolio-rahulkp"
-              data-color-scheme="no-preference: light; light: light; dark: dark_dimmed;"
-              data-icon="octicon-star"
-              data-size="large"
-              aria-label="Star Rahul1582/portfolio-rahulkp on GitHub"
-            >
-              Star
-            </GitHubButton>
-
-            <GitHubButton
-              href="https://github.com/Rahul1582/portfolio-rahulkp/fork"
-              data-color-scheme="no-preference: light; light: light; dark: dark_dimmed;"
-              data-icon="octicon-repo-forked"
-              data-size="large"
-              aria-label="Fork Rahul1582/portfolio-rahulkp on GitHub"
-            >
-              Fork
-            </GitHubButton>
-          </Flex>
         </Flex>
       </Box>
     </Box>

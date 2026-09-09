@@ -47,9 +47,13 @@ export default function Footer() {
         }}
         mb={{ base: "20px", xl: "0px" }}
       >
-        {" "}
+        Forked from {' <'}
+        <Link href="https://github.com/Rahul1582/portfolio-rahulkp" target="blank">
+        Rahul1582/portfolio-rahulkp
+        </Link>
+        {'> '} 
         &copy; {1900 + new Date().getYear()}
-        {"</>"} with <AiFillHeart /> by Rahul Kumar Patro • All Rights Reserved
+        by Rahul Kumar Patro • All Rights Reserved
       </Text>
       <List display="flex">
         <ListItem
@@ -60,7 +64,7 @@ export default function Footer() {
           opacity="0.6"
           _hover={{ opacity: 1 }}
         >
-          <Link href="https://github.com/Rahul1582" target="blank">
+          <Link href="https://github.com/ToyaDR" target="blank">
             <AiFillGithub />
           </Link>
         </ListItem>
@@ -72,32 +76,8 @@ export default function Footer() {
           opacity="0.6"
           _hover={{ opacity: 1 }}
         >
-          <Link href="https://leetcode.com/rahul158_/" target="blank">
-            <SiLeetcode />
-          </Link>
-        </ListItem>
-        <ListItem
-          me={{
-            base: "20px",
-            md: "40px"
-          }}
-          opacity="0.6"
-          _hover={{ opacity: 1 }}
-        >
-          <Link href="https://www.linkedin.com/in/rahulkp15/" target="blank">
+          <Link href="https://www.linkedin.com/in/victoria-rosuello-10340699" target="blank">
             <BiLogoLinkedin />
-          </Link>
-        </ListItem>
-        <ListItem
-          me={{
-            base: "20px",
-            md: "40px"
-          }}
-          opacity="0.6"
-          _hover={{ opacity: 1 }}
-        >
-          <Link href="https://www.instagram.com/_rahul_patro_/" target="blank">
-            <BsInstagram />
           </Link>
         </ListItem>
       </List>
