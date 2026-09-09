@@ -20,74 +20,6 @@ export default function Dashboard() {
   const styles = useStyleConfig("Card");
   let highlightTextColor = useColorModeValue("lightblue.100", "lightpeach.100");
   let textColor = useColorModeValue("gray.700", "white");
-  let quotes = [
-    {
-      text: "Genius is one percent inspiration and ninety-nine percent perspiration.",
-      author: "Thomas Edison, type.fit",
-    },
-    {
-      text: "You can observe a lot just by watching.",
-      author: "Yogi Berra, type.fit",
-    },
-    {
-      text: "A house divided against itself cannot stand.",
-      author: "Abraham Lincoln, type.fit",
-    },
-    {
-      text: "Difficulties increase the nearer we get to the goal.",
-      author: "Johann Wolfgang von Goethe, type.fit",
-    },
-    {
-      text: "Fate is in your hands and no one elses",
-      author: "Byron Pulsifer, type.fit",
-    },
-    {
-      text: "Be the chief but never the lord.",
-      author: "Lao Tzu, type.fit",
-    },
-    {
-      text: "Nothing happens unless first we dream.",
-      author: "Carl Sandburg, type.fit",
-    },
-    {
-      text: "Well begun is half done.",
-      author: "Aristotle, type.fit",
-    },
-    {
-      text: "Life is a learning experience, only if you learn.",
-      author: "Yogi Berra",
-    },
-    {
-      text: "Self-complacency is fatal to progress.",
-      author: "Margaret Sangster, type.fit",
-    },
-    {
-      text: "Peace comes from within. Do not seek it without.",
-      author: "Buddha, type.fit",
-    },
-    {
-      text: "What you give is what you get.",
-      author: "Byron Pulsifer, type.fit",
-    },
-    {
-      text: "We can only learn to love by loving.",
-      author: "Iris Murdoch, type.fit",
-    },
-    {
-      text: "Life is change. Growth is optional. Choose wisely.",
-      author: "Karen Clark, type.fit",
-    },
-    {
-      text: "You'll see it when you believe it.",
-      author: "Wayne Dyer, type.fit",
-    },
-    {
-      text: "Today is the tomorrow we worried about yesterday.",
-      author: "type.fit",
-    },
-  ];
-
-  let randomNumber = Math.floor(Math.random() * quotes.length);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -134,7 +66,7 @@ export default function Dashboard() {
                     fontWeight="bold"
                     color={textColor}
                   >
-                    Hello Everyone!! 🙋🏻‍♂️
+                    Hello!!
                   </Text>
 
                   <Text
@@ -143,9 +75,9 @@ export default function Dashboard() {
                     color={textColor}
                     mt="20px"
                   >
-                    This is{" "}
+                    My name is {" "}
                     <Text display="inline-flex" color={highlightTextColor}>
-                      Rahul Kumar Patro
+                      Toya Rosuello
                     </Text>
                   </Text>
                   <Text
@@ -154,10 +86,11 @@ export default function Dashboard() {
                     color={textColor}
                     mt="20px"
                   >
-                    I am a{" "}
+                    I'm a{" "}
                     <Text display="inline-flex" color={highlightTextColor}>
-                      Software Developer
+                      Game Designer
                     </Text>
+                    {" "}based out of Seattle, WA.
                   </Text>
                 </Box>
               </Flex>
@@ -182,33 +115,6 @@ export default function Dashboard() {
               </Skeleton>
             </Flex>
           </Grid>
-        </Flex>
-
-        <Flex direction="column" justifyContent="center" alignItems="center">
-          <Box
-            __css={styles}
-            border="none"
-            textAlign="center"
-            cursor="default"
-            mt="20px"
-          >
-            Random Quote
-            <Box
-              fontSize={{ sm: "1em", md: "1.3em", xl: "1.3em" }}
-              color={highlightTextColor}
-              cursor="default"
-            >
-              {quotes[randomNumber]?.text ? (
-                <Typewriter
-                  onInit={(typewriter) => {
-                    typewriter.typeString(quotes[randomNumber]?.text).start();
-                  }}
-                />
-              ) : (
-                <span>|</span>
-              )}
-            </Box>
-          </Box>
         </Flex>
       </Box>
     </Box>
