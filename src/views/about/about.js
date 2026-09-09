@@ -40,7 +40,7 @@ import postgres from "../../assets/icons/postgres.png";
 import rxjs from "../../assets/icons/rxjs.png";
 import azure from "../../assets/icons/azure.png";
 import bootstrap from "../../assets/icons/bootstrap.png";
-import myphoto from "../../assets/aboutMePhoto.jpg";
+import myphoto from "../../assets/about_me_placeholder.jpg";
 import GitHubCalendar from "react-github-calendar";
 
 export default function About() {
@@ -76,11 +76,6 @@ export default function About() {
           alignItems="center"
           mb="40px"
         >
-          {/* <TypeAnimation
-            sequence={["ABOUT ME", 500, "ABOUT", 500, "ABOUT ME", 500]}
-            style={{ fontSize: "3em" }}
-            cursor={false}
-          /> */}
           <Grid
             templateColumns={{
               base: "1fr",
@@ -108,7 +103,6 @@ export default function About() {
                 height="100%"
                 bg={textColorPrimary}
                 transform="rotate(4deg)"
-                // zIndex="-1"
               />
               <Skeleton
                 height="100%"
@@ -132,211 +126,26 @@ export default function About() {
               alignItems="center"
               justifyContent="center"
             >
-              <Box __css={styles} border="none" bg="transparent">
-                <Text
-                  color={textColorPrimary}
-                  fontSize="2xl"
-                  mb="40px"
-                  textAlign="center"
-                >
-                  {"<GENERAL INFORMATION/>"}
-                </Text>
-                <SimpleGrid columns="2" gap="20px">
-                  <AboutMeInfo
-                    boxShadow={cardShadow}
-                    title="Current Organization"
-                    value="Teradata"
-                  />
-                  <AboutMeInfo
-                    boxShadow={cardShadow}
-                    title="Designation"
-                    value="Software Development Engineer - 1"
-                  />
+              <Box __css={styles} border="none" bg="transparent" width={"50vw"}>
+                <SimpleGrid columns="1" gap="20px">
                   <AboutMeInfo
                     boxShadow={cardShadow}
                     title="Location"
-                    value="Bengaluru, Karnataka"
+                    values="Seattle, WA, U.S.A."
                   />
                   <AboutMeInfo
                     boxShadow={cardShadow}
-                    title="Education"
-                    value="BIT Mesra, Ranchi"
-                  />
-                  <AboutMeInfo
-                    boxShadow={cardShadow}
-                    title="Degree"
-                    value="Masters"
-                  />
-                  <AboutMeInfo
-                    boxShadow={cardShadow}
-                    title="Languages"
-                    value="English, Hindi, Odia"
+                    title="Carnegie Mellon University"
+                    values={[
+                      "B.S. Computer Science",
+                      "minor in Game Design" 
+                    ]}
                   />
                 </SimpleGrid>
               </Box>
             </Flex>
           </Grid>
         </Flex>
-
-        <Flex
-          direction="row"
-          justifyContent="center"
-          alignItems="center"
-          mb="40px"
-        >
-          <Text color={textColorPrimary} fontSize="2em" textAlign="center">
-            {"<MY SKILLSET/>"}
-          </Text>
-        </Flex>
-        <SimpleGrid
-          columns={{ base: 2, md: 2, lg: 3, xl: 6, "2xl": 6 }}
-          gap="20px"
-          mb="20px"
-          align={{ base: "center", xl: "center" }}
-          justify={{ base: "center", xl: "center" }}
-        >
-          <TechStackCard imagepath={angular} />
-          <TechStackCard imagepath={react} />
-          <TechStackCard imagepath={js} />
-          <TechStackCard imagepath={typescript} />
-          <TechStackCard imagepath={redux} background="white" />
-          <TechStackCard imagepath={rxjs} background="white" />
-          <TechStackCard imagepath={cpp} />
-          <TechStackCard imagepath={node} />
-          <TechStackCard imagepath={mongo} />
-          <TechStackCard imagepath={postgres} />
-          <TechStackCard imagepath={express} background="white" />
-          <TechStackCard imagepath={git} />
-          <TechStackCard imagepath={gitlab} />
-          <TechStackCard imagepath={firebase} />
-          <TechStackCard imagepath={html} />
-          <TechStackCard imagepath={css} />
-          <TechStackCard imagepath={bootstrap} />
-          <TechStackCard imagepath={azure} />
-        </SimpleGrid>
-
-        <Flex
-          direction="row"
-          justifyContent="center"
-          alignItems="center"
-          mb="40px"
-          mt="40px"
-        >
-          <Text color={textColorPrimary} fontSize="2em" textAlign="center">
-            {"<MY GITHUB CONTRIBUTIONS/>"}
-          </Text>
-        </Flex>
-        <Box display="flex" justifyContent="center" alignItems="center">
-          <GitHubCalendar
-            username="rahul1582"
-            colorScheme={colorMode === "light" ? "light" : "dark"}
-            year="last"
-          />
-        </Box>
-        <Flex justifyContent="center" alignItems="center" mt="20px">
-          <Skeleton
-            height="100%"
-            isLoaded={loadedgithubimg}
-            color="white"
-            fadeDuration={1}
-          >
-            <LazyLoadImage
-              src={
-                colorMode === "light"
-                  ? "https://github-readme-streak-stats.herokuapp.com?user=Rahul1582&theme=whatsapp-light&hide_border=true&border_radius=5.8&date_format=j%20M%5B%20Y%5D"
-                  : "https://github-readme-streak-stats.herokuapp.com?user=Rahul1582&theme=calm-pink&hide_border=true&border_radius=5.8&date_format=j%20M%5B%20Y%5D"
-              }
-              alt="GitHub Streak"
-              effect="blur"
-              onLoad={() => setloadedgithubimg(true)}
-            />
-          </Skeleton>
-        </Flex>
-        <Flex justifyContent="center" alignItems="center" mt="20px">
-          <Link href="https://github.com/Rahul1582" target="blank">
-            <Button variant="darkBrand" fontSize="sm" fontFamily="DM Sans">
-              Visit Github
-            </Button>
-          </Link>
-        </Flex>
-        <Flex
-          direction="row"
-          justifyContent="center"
-          alignItems="center"
-          mb="40px"
-          mt="40px"
-        >
-          <Text color={textColorPrimary} fontSize="2em" textAlign="center">
-            {"<MY INTERESTS AND HOBBIES/>"}
-          </Text>
-        </Flex>
-        <SimpleGrid
-          columns={{ base: 1, xl: 3, "2xl": 3 }}
-          gap="20px"
-          mb="20px"
-          align={{ base: "center", xl: "center" }}
-          justify={{ base: "center", xl: "center" }}
-        >
-          <Box __css={styles}>
-            <Box textAlign="center">
-              <Icon
-                as={MdFlightTakeoff}
-                width="30px"
-                height="30px"
-                color="inherit"
-              />
-            </Box>
-            <Text textAlign="center">Travelling & Exploring</Text>
-            <Text color={textColorPrimary} textAlign="center" mt="5px">
-              I am passionate about traveling and exploring new places. Whether
-              it's uncovering hidden gems in my own backyard or embarking on
-              exciting adventures, I thrive on the thrill of discovering new
-              cultures, cuisines, and landscapes. Traveling not only broadens my
-              horizons but also provides me with valuable life experiences and a
-              deep appreciation for the diversity of our world!!
-            </Text>
-          </Box>
-          <Box __css={styles}>
-            <Box textAlign="center">
-              <Icon
-                as={LiaDrumSolid}
-                width="30px"
-                height="30px"
-                color="inherit"
-              />
-            </Box>
-            <Text textAlign="center">Playing Drums</Text>
-            <Text color={textColorPrimary} textAlign="center" mt="5px">
-              I have a deep passion for playing the drums, which has been a
-              cherished hobby of mine for many years. The rhythmic beats and the
-              feeling of being in sync with the music provide me with a sense of
-              joy and creative expression that is truly unparalleled. Whether
-              it's jamming with friends, exploring new techniques, or simply
-              drumming to my favorite tunes, I find immense fulfillment and
-              relaxation in this musical pursuit!!
-            </Text>
-          </Box>
-          <Box __css={styles}>
-            <Box textAlign="center">
-              <Icon
-                as={GiCricketBat}
-                width="30px"
-                height="30px"
-                color="inherit"
-              />
-            </Box>
-            <Text textAlign="center">Playing Outdoor Games</Text>
-            <Text color={textColorPrimary} textAlign="center" mt="5px">
-              Whether it's a competitive game of soccer, a relaxing round of
-              golf, or simply throwing a frisbee in the park, I find immense joy
-              and fulfillment in the great outdoors. Playing sports not only
-              keeps me physically active but also fosters teamwork, leadership,
-              and a strong sense of camaraderie. It's a wonderful way for me to
-              unwind, stay fit, and connect with friends and family while
-              enjoying the beauty of nature!!
-            </Text>
-          </Box>
-        </SimpleGrid>
       </Box>
     </Box>
   );

@@ -8,11 +8,15 @@ import {
   MdCode,
   MdContacts
 } from "react-icons/md";
+import { FaDiceD20 } from "react-icons/fa6";
+import { GiRetroController } from "react-icons/gi";
+
 
 import Dashboard from "./views/dashboard/dashboard";
 import About from "./views/about/about";
 import Resume from "./views/resume/resume";
-import Projects from "./views/projects/projects";
+import VideoGames from "./views/video-games/video-games";
+import TTRPGs from "./views/ttrpgs/ttrpgs";
 import Contact from "./views/contact/contact";
 
 const routes = [
@@ -31,11 +35,18 @@ const routes = [
     component: About
   },
   {
-    name: "Projects And Blogs",
-    path: "/projects",
-    navbarDisplayName: "<Projects And Blogs/>",
-    icon: <Icon as={MdCode} width="30px" height="30px" color="inherit" />,
-    component: Projects
+    name: "Video Games",
+    path: "/video-games",
+    navbarDisplayName: "<Video Games/>",
+    icon: <Icon as={GiRetroController} width="30px" height="30px" color="inherit" />,
+    component: VideoGames
+  },
+    {
+    name: "TTRPGs",
+    path: "/ttrpgs",
+    navbarDisplayName: "<TTRPGs/>",
+    icon: <Icon as={FaDiceD20} width="30px" height="30px" color="inherit" />,
+    component: TTRPGs
   },
   {
     name: "Resume",
@@ -44,13 +55,6 @@ const routes = [
     icon: <Icon as={MdBarChart} width="30px" height="30px" color="inherit" />,
     component: Resume
   },
-  {
-    name: "Contact Me",
-    path: "/contact",
-    navbarDisplayName: "<Contact/>",
-    icon: <Icon as={MdContacts} width="30px" height="30px" color="inherit" />,
-    component: Contact
-  }
 ];
 
 export default routes;

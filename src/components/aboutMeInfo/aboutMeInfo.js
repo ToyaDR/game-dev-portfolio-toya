@@ -2,11 +2,12 @@ import React from "react";
 import { Box, useColorModeValue, useStyleConfig, Text } from "@chakra-ui/react";
 
 export default function AboutMeInfo(props) {
-  const { title, value } = props;
+  const { title, values } = props;
   const textColorPrimary = useColorModeValue("lightblue.100", "lightpeach.100");
   const textColorSecondary = useColorModeValue("secondaryGray.900", "white");
   const bg = useColorModeValue("secondaryGray.400", "navyBlue.300");
   const styles = useStyleConfig("Card");
+
   return (
     <Box
       __css={styles}
@@ -25,9 +26,14 @@ export default function AboutMeInfo(props) {
         <Text color={textColorSecondary} fontSize="15px" textAlign="center">
           {title}
         </Text>
-        <Text color={textColorPrimary} fontSize="16px" textAlign="center">
-          {value}
-        </Text>
+        {(
+          Array.isArray(values) ? values : [values])
+          .map((value) => (
+            <Text color={textColorPrimary} fontSize="16px" textAlign="center">
+              {value}
+            </Text>
+          )
+        )}
       </Box>
     </Box>
   );
