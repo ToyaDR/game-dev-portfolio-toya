@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/game-dev-portfolio-toya/static/css/main.f9dc0260.css",
+    "main.js": "/game-dev-portfolio-toya/static/js/main.89daf069.js",
+    "static/js/453.390bc715.chunk.js": "/game-dev-portfolio-toya/static/js/453.390bc715.chunk.js",
+    "static/media/dashboard.gif": "/game-dev-portfolio-toya/static/media/dashboard.48011af8a598cfeec00f.gif",
+    "static/media/bizworks_game_screen.png": "/game-dev-portfolio-toya/static/media/bizworks_game_screen.667b45a54efe0e1d26f6.png",
+    "static/media/the_gathering_formatted_page.png": "/game-dev-portfolio-toya/static/media/the_gathering_formatted_page.dd7a61e10140b23cb752.png",
+    "static/media/sidenavLight.png": "/game-dev-portfolio-toya/static/media/sidenavLight.d0d918eb1db49ef3ddc6.png",
+    "static/media/sidenavDark.png": "/game-dev-portfolio-toya/static/media/sidenavDark.73c0f22ce3eb6e7eee3b.png",
+    "static/media/DMSans-VariableFont_opsz,wght.woff2": "/game-dev-portfolio-toya/static/media/DMSans-VariableFont_opsz,wght.920315b0779497c02dfe.woff2",
+    "static/media/LobsterTwo-Regular.woff2": "/game-dev-portfolio-toya/static/media/LobsterTwo-Regular.cdb82f2538895fbe5b3b.woff2",
+    "static/media/about_me_placeholder.jpg": "/game-dev-portfolio-toya/static/media/about_me_placeholder.68283f4494d81ae7413d.jpg",
+    "static/media/LilitaOne-Regular.woff2": "/game-dev-portfolio-toya/static/media/LilitaOne-Regular.43e3adb2949afbee489c.woff2",
+    "index.html": "/game-dev-portfolio-toya/index.html",
+    "main.f9dc0260.css.map": "/game-dev-portfolio-toya/static/css/main.f9dc0260.css.map",
+    "main.89daf069.js.map": "/game-dev-portfolio-toya/static/js/main.89daf069.js.map",
+    "453.390bc715.chunk.js.map": "/game-dev-portfolio-toya/static/js/453.390bc715.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9dc0260.css",
+    "static/js/main.89daf069.js"
+  ]
+}
