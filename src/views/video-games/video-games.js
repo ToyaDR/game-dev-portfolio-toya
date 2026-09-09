@@ -3,20 +3,13 @@ import {
   Box,
   SimpleGrid,
   Flex,
-  Text,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import routes from "../../routes";
 import Navbar from "../../components/Navbar/Navbar";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
-import bizworks_title from "../../assets/projects/bizworks_title_screen.png";
+import bizworks_gameplay from "../../assets/projects/bizworks_game_screen.png";
 
 export default function VideoGames() {
-  const textColorPrimary = useColorModeValue(
-    "secondaryGray.900",
-    "lightpeach.100"
-  );
-
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   },[]);
@@ -46,7 +39,7 @@ export default function VideoGames() {
           justifyContent="center"
         >
           <ProjectCard
-            projectImage={bizworks_title}
+            projectImage={bizworks_gameplay}
             projectName={"BizWorks - Financial Literacy Game"}
             aboutProject={"Lead Programmer"}
             techStack={"C#, Unity"}

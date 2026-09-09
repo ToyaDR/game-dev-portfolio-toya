@@ -7,10 +7,8 @@ import {
   Text,
   useColorModeValue
 } from "@chakra-ui/react";
-import { AiFillGithub, AiFillHeart } from "react-icons/ai";
-import { BsInstagram } from "react-icons/bs";
+import { AiFillGithub } from "react-icons/ai";
 import { BiLogoLinkedin } from "react-icons/bi";
-import { SiLeetcode } from "react-icons/si";
 
 export default function Footer() {
   const textColor = useColorModeValue("lightblue.100", "lightpeach.100");

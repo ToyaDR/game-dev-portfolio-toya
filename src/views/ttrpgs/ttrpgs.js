@@ -3,8 +3,6 @@ import {
   Box,
   SimpleGrid,
   Flex,
-  Text,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import routes from "../../routes";
 import Navbar from "../../components/Navbar/Navbar";
@@ -12,11 +10,6 @@ import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import the_gathering_formatted_page from "../../assets/projects/the_gathering_formatted_page.png";
 
 export default function TTRPGs() {
-  const textColorPrimary = useColorModeValue(
-    "secondaryGray.900",
-    "lightpeach.100"
-  );
-
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   },[]);

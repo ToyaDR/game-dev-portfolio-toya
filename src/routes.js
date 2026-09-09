@@ -5,8 +5,6 @@ import {
   MdDashboard,
   MdBarChart,
   MdPersonPin,
-  MdCode,
-  MdContacts
 } from "react-icons/md";
 import { FaDiceD20 } from "react-icons/fa6";
 import { GiRetroController } from "react-icons/gi";
@@ -17,7 +15,6 @@ import About from "./views/about/about";
 import Resume from "./views/resume/resume";
 import VideoGames from "./views/video-games/video-games";
 import TTRPGs from "./views/ttrpgs/ttrpgs";
-import Contact from "./views/contact/contact";
 
 const routes = [
   {

@@ -12,7 +12,6 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import Navbar from "../../components/Navbar/Navbar";
 import routes from "../../routes";
 import dashboardimg from "../../assets/dashboard.gif";
-import Typewriter from "typewriter-effect";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function Dashboard() {
