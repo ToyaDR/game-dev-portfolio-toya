@@ -21,5 +21,6 @@ jobs:
 
     - name: Build and Deploy React app to GitHub Pages
       run: |
+        npm install
         npm run predeploy
         npm run deploy
