@@ -5,49 +5,19 @@ import {
   SimpleGrid,
   Grid,
   useStyleConfig,
-  Text,
   useColorModeValue,
-  useColorMode,
-  Icon,
-  Button,
-  Link,
   Skeleton,
 } from "@chakra-ui/react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
-import { MdFlightTakeoff } from "react-icons/md";
-import { LiaDrumSolid } from "react-icons/lia";
-import { GiCricketBat } from "react-icons/gi";
 import Navbar from "../../components/Navbar/Navbar";
 import routes from "../../routes";
-import TechStackCard from "../../components/techStackCard/techStackCard";
 import AboutMeInfo from "../../components/aboutMeInfo/aboutMeInfo";
-import angular from "../../assets/icons/angular.svg";
-import typescript from "../../assets/icons/typescript.svg";
-import node from "../../assets/icons/nodejs.svg";
-import mongo from "../../assets/icons/mongodb.svg";
-import js from "../../assets/icons/javascript.svg";
-import react from "../../assets/icons/react.svg";
-import html from "../../assets/icons/html.svg";
-import css from "../../assets/icons/css3.svg";
-import git from "../../assets/icons/git.svg";
-import gitlab from "../../assets/icons/gitlab.svg";
-import cpp from "../../assets/icons/c++.png";
-import express from "../../assets/icons/express.svg";
-import redux from "../../assets/icons/redux.png";
-import firebase from "../../assets/icons/firebase.png";
-import postgres from "../../assets/icons/postgres.png";
-import rxjs from "../../assets/icons/rxjs.png";
-import azure from "../../assets/icons/azure.png";
-import bootstrap from "../../assets/icons/bootstrap.png";
 import myphoto from "../../assets/about_me_placeholder.jpg";
-import GitHubCalendar from "react-github-calendar";
 
 export default function About() {
   const [loadedProfileimg, setloadedProfileimg] = useState(false);
-  const [loadedgithubimg, setloadedgithubimg] = useState(false);
   const styles = useStyleConfig("Card");
-  const { colorMode } = useColorMode();
   const textColorPrimary = useColorModeValue("lightblue.100", "lightpeach.100");
   const cardShadow = useColorModeValue(
     "0px 18px 40px rgba(112, 144, 176, 0.12)",
